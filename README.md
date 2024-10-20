@@ -6,4 +6,4 @@ live preview => https://atif-ghafoor.github.io/weather_web/
 About this project:
   when u open the web it will show defualt location of hasilpur
   you can serach location and also click on your location button
-  when u will click it will ask a location premision.
+  It will ask a location premision.
