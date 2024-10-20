@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Weather</title>
+</head>
+
+<body>
+    <div id="spinner">
+        <div class="custom-spinner"></div>
+    </div>
+    <div id="error-box">
+        <h1 id="error">There is an error!</h1>
+    </div>
+    <div class="upper-body">
+        <div class="box-upper-1">
+            <div class="location">
+                <i class="fa fa-location-dot" style="font-size: 25px;"></i>
+                <h2>hasilpur</h2>
+            </div>
+            <div class="day">
+                <i style="visibility: hidden;" class="fa fa-calendar" style="font-size: 25px;"></i>
+                <div id="date" style="color: rgb(191,253,255); ">September 15 <br> Monday</div>
+            </div>
+            <div class="temperature" style="padding: 20px 20px 20px 0.8em; gap: 10px;">
+                <img class="temperature-img" src="./img/high_temprature.png" alt="">
+                <h1>25°</h1>
+            </div>
+        </div>
+        <div class="box-upper-2">
+            <img id="weather-img-today" src="" alt="">
+            <div id="weather-name-today" style="color: rgb(191,253,255); ">cloudy</div>
+        </div>
+        <div class="box-upper-3">
+            <div class="search-box">
+                <input id="search-bar" type="text" placeholder="Search for location. . . . .">
+                <button id="search-button" title="search"><i class="fa fa-search"></i></button>
+                <button id="location-button" title="Your Location"><i class="fa fa-location"></i></button>
+            </div>
+            <div class="box-upper-3-content">
+                <div class="flexTemp" style="display: none;">
+                    <i class="fa fa-temperature-quarter"></i>
+                    <div id="temp"> 60%</div>
+                </div>
+                <div class="box-lower-1">
+                    <?xml version="1.0" ?><svg class="feather feather-sunrise" fill="none" height="24"
+                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 18a5 5 0 0 0-10 0" />
+                        <line x1="12" x2="12" y1="2" y2="9" />
+                        <line x1="4.22" x2="5.64" y1="10.22" y2="11.64" />
+                        <line x1="1" x2="3" y1="18" y2="18" />
+                        <line x1="21" x2="23" y1="18" y2="18" />
+                        <line x1="18.36" x2="19.78" y1="11.64" y2="10.22" />
+                        <line x1="23" x2="1" y1="22" y2="22" />
+                        <polyline points="8 6 12 2 16 6" />
+                    </svg>
+                    <div id="sunrise"> sunrise 7:00</div>
+                </div>
+                <div class="box-lower-2">
+
+                    <?xml version="1.0" ?><svg class="feather feather-sunset" fill="none" height="24"
+                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 18a5 5 0 0 0-10 0" />
+                        <line x1="12" x2="12" y1="9" y2="2" />
+                        <line x1="4.22" x2="5.64" y1="10.22" y2="11.64" />
+                        <line x1="1" x2="3" y1="18" y2="18" />
+                        <line x1="21" x2="23" y1="18" y2="18" />
+                        <line x1="18.36" x2="19.78" y1="11.64" y2="10.22" />
+                        <line x1="23" x2="1" y1="22" y2="22" />
+                        <polyline points="16 5 12 9 8 5" />
+                    </svg>
+                    <div id="sunset"> sunset 19:20</div>
+                </div>
+                <div class="box-lower-3">
+                    <i class="fa fa-droplet"></i>
+                    <div id="humidity"> 60%</div>
+                </div>
+                <div class="box-lower-4">
+                    <i class="fa fa-wind"></i>
+                    <div id="wind-speed"> 10 km/h</div>
+                </div>
+                <div class="box-lower-5">
+                    <i class="fa-regular fa-compass "></i>
+                    <div id="air-dir"> North-East</div>
+                </div>
+                <div class="box-lower-6">
+                    <i class="fa fa-arrow-up-long"></i>
+                    <div id="air-speed"> 1023.0 mb</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lower-body">
+
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
